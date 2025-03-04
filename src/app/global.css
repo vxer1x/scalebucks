@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(23, 23, 23);
+    color: gray;
+    font-family: monospace;
+}
+
+.grid {
+    height: 85vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "navbar navbar"
+        "card1 card2"
+        "card1 card3";
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.poster {
+    grid-area: card1;
+}
+
+.caption {
+    grid-area: card2;
+}
+
+.testimonial {
+    grid-area: card3;
+}
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-areas:
+            "navbar"
+            "card1"
+            "card2"
+            "card3";
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto; /* Adjust height automatically */
+        height: auto; /* Ensures it adapts to content */
+    }
+}

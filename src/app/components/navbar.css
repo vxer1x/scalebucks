@@ -1,0 +1,29 @@
+.navbar {
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Pushes content to opposite sides */
+    align-items: center; /* Centers vertically */
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar-links a:hover {
+    color: green;
+}

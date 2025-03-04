@@ -1,0 +1,99 @@
+
+/* caption Styling */
+.caption
+{
+    background-color: black;
+    border-radius: 25px;
+    font-size: 2.5vw;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    line-height: 0.5;
+}
+
+.highlight {
+    color: green; /* Change to any highlight color */
+    font-weight: bold;
+}
+
+/* testimonials Styling */
+.testimonial 
+{
+    background-color: black;
+    border-radius: 25px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 5%;
+    overflow: hidden;
+}
+
+.comment-card {
+    display: flex;
+    align-items: center;
+    background: #171717;
+    padding: 20px; /* Adjusted for a better fit */
+    margin: 10px 30px 10px 30px; /* Removed excessive margins */
+    border-radius: 20px;
+    color: whitesmoke;
+    box-sizing: border-box; /* Prevents overflow issues */
+    height: 35%;
+    overflow: hidden;
+}
+
+.comment-card img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin: 0px 50px 0px 10px;
+    filter: invert(100%);
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between name and stars */
+}
+
+.name-rating h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.rating {
+    font-size: 1rem;
+}
+
+
+
+/*------------------------ Poster Animations--------------*/
+/* Poster Styling */
+.poster {
+    background-color: black; /* Match background */
+    border-radius: 25px;
+    overflow: hidden; /* Prevents overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Ensures it takes full width inside grid */
+    height: 100%; /* Ensures it takes full height inside grid */
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures it fully fills the div while keeping aspect ratio */
+}
