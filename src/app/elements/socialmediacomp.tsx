@@ -3,7 +3,7 @@ import "@/app/elements/socialmediacomp.css"
 
 export default function SocialmediaComp() {
     return (
-        <div className="socialmedia-comp">
+        <div className="socialmedia-comp" id="socialmedia-section">
             <h1>scalebucks.</h1>
             <div className="contact-info">
                 <p>email:    contact@scalebucks.com</p>
