@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.navbar-title {
+    color: green;
+}
+
 .navbar-elements {
     width: 100%;
     display: flex;
@@ -19,11 +23,15 @@
     gap: 35px;
 }
 
-.navbar-links a {
+.cursor-pointer{
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
-.navbar-links a:hover {
+.cursor-pointer h1 {
+    font-size: 1.5rem;
+}
+
+.cursor-pointer:hover {
     color: green;
 }

@@ -1,0 +1,79 @@
+.services-comp {
+    display: grid;
+    margin-bottom: 25vh;
+    gap: 1rem;
+    padding-top: 10vh;
+    
+    grid-template-areas:
+        "serv serv serv serv"
+        "card1 card1 card1 card1";
+    
+    grid-template-rows: 10vh 50vh;
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        grid-template-areas:
+            "serv"
+            "card1";
+        grid-template-columns: 1fr;
+    }
+}
+
+.service-card {
+    background-color: black;
+    grid-area: serv;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    color: green;
+}
+
+/* Card Styling */
+.service-card-title {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Hover Effect */
+.service-card-title:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    h1 {
+        color: green;
+    }
+}
+
+/* Title Styling */
+.service-card-title h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Price Styling */
+.service-card-title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.service-card-title p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}

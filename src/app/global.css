@@ -1,13 +1,15 @@
 body {
     background-color: rgb(23, 23, 23);
-    color: gray;
+    color: white;
     font-family: monospace;
 }
+
 
 .grid {
     height: 85vh;
     display: grid;
     gap: 1rem;
+    margin-bottom: 10vh;
     grid-template-areas:
         "navbar navbar"
         "card1 card2"
@@ -17,10 +19,12 @@ body {
 }
 
 .navbar {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
     grid-area: navbar;
 }
 
 .poster {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     grid-area: card1;
 }
 
@@ -29,11 +33,12 @@ body {
 }
 
 .testimonial {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     grid-area: card3;
 }
 
 
-@media (max-width: 970px) {
+@media (max-width: 1081px) {
     .grid {
         grid-template-areas:
             "navbar"
@@ -42,6 +47,6 @@ body {
             "card3";
         grid-template-columns: 1fr; /* Single column */
         grid-template-rows: auto; /* Adjust height automatically */
-        height: auto; /* Ensures it adapts to content */
+        height: 97vh;
     }
 }
